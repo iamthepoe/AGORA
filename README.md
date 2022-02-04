@@ -45,6 +45,7 @@ Todo fundamento teórico desse projeto foi proporcionado pelo professor <b>Victo
 - [ ] Funcionalidade de responder outros comentários
 - [ ] Tags de tópicos
 - [ ] Temas alternativos
+- [ ] Editor de texto sofisticado
 
 
 
