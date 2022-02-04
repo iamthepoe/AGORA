@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>ÁGORA</title>
+	<%- include('partials/bootstrapstyle.ejs'); %>
+</head>
+<body>
+	<%- include('partials/navbar.ejs'); %>
+	<div class="container">
+		<hr>
+		<h1><%=topic.title%></h1>
+		<p><%=topic.description%></p>
+		<hr>
+		<form method="POST" action="/answer">
+			<h3>Responda</h3>
+			<br>
+			<label><p>Resposta:</p></label>
+			<textarea placeholder="Digite aqui sua resposta" class="form-control" name="content" required></textarea>
+			<input type="hidden" name="topicid" value="<%=topic.id%>">
+			<br>
+			<button type="submit" class="btn btn-dark">Responder</button>
+		</form>
+		<hr>
+		<h3>Respostas: </h3>
+		<br>
+		<% answers.forEach(answer => {%>
+			<div class="card">
+				<div class="card-body">
+					<p><%=answer.content%></p>
+				</div>
+			</div>
+			<br>
+		<%});%>
+	</div>
+	<%- include('partials/bootstrapscript.ejs');%>
+</body>
+
+</html>

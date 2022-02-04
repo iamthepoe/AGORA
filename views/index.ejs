@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head lang="pt-br">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>ÁGORA</title>
+	<%- include('partials/bootstrapstyle.ejs'); %>
+</head>
+<body>
+	<%- include('partials/navbar.ejs'); %>
+	<div class="container">
+		<hr>
+		<div class="title d-flex justify-content-center">
+			<h1>Tópicos</h1>
+		</div>
+			
+		<hr>
+			<div class="divbutton d-flex justify-content-center">
+				<a href="/createtopic" class="btn btn-dark">Criar tópico</a>	
+			</div>
+		<hr>
+	</div>
+	<div class="container">
+		<% topics.forEach(topic => {%>
+			<br>
+			<div class="card">
+				<div class="card-body">
+					<h3><%=topic.title%></h3>
+				</div>
+				<div class="card-footer">
+					<a href="topic/<%=topic.id%>"><button class="btn btn-dark">Responder</button></a>
+				</div>
+			</div>
+		<% }); %>
+	</div>
+	<%- include('partials/bootstrapscript.ejs');%>
+</body>
+	
+</html>

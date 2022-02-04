@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>ÁGORA</title>
+	<%- include('partials/bootstrapstyle.ejs'); %>
+</head>
+<body>
+	<%- include('partials/navbar.ejs'); %>
+
+	<div class="container container-form">
+		<div class="card">
+			<div class="card-header">
+				<h3 class="d-flex justify-content-center">Criar tópico</h3>
+			</div>
+			<div class="card-body">
+				<form class="form-control" method="POST" action="/savetopic">
+					<label>Título:</label>
+					<input type="text" placeholder="Digite aqui o título do debate" class="form-control" name="title" required></input>
+					<label>Descrição:</label>
+					<textarea placeholder="Digite aqui a descrição do debate" class="form-control" name="description" required></textarea>
+					<br>
+					<button class="btn btn-dark">Enviar</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	<%- include('partials/bootstrapscript.ejs');%>
+</body>
+	
+</html>

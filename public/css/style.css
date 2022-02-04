@@ -1,0 +1,18 @@
+
+.logo{
+	width: 40%;
+	height: 20%;
+}
+
+.container-form{
+	margin-top: 30px;
+}
+
+::-webkit-scrollbar{
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: gray;
+    border-radius: 6px;
+}
