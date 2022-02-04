@@ -1,2 +1,2 @@
 # AGORA
-Uma plataforma de debate de assuntos filosóficos
+<img src="https://raw.githubusercontent.com/iamthepoe/AGORA/main/public/images/logo2.png">
