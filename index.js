@@ -13,11 +13,11 @@ connection
 	.authenticate()
 
 	.then(() => {
-		console.log("Conexão feita com o banco de dados.");
+		console.log("Successful conection.");
 	})
 
-	.catch((msgErro)=>{
-		console.log(msgErro);
+	.catch((errorMsg)=>{
+		console.log(errorMsg);
 	});
 
 //setting ejs as a view engine
